@@ -1,0 +1,45 @@
+#include "types.h"
+
+struct Parent
+{
+    u32 flags;
+    s32 x;
+    s32 y;
+    void *child[32];
+};
+
+struct Obj
+{
+    u32 flags;
+    s32 x;
+    s32 y;
+    u8 pad_0C[0x20];
+    void (*callback)(void *);
+    struct Parent *parent;
+    u32 count;
+};
+
+void *func_080A3770(void *, s32, u16, s16, s16, s32, s32, s32, s32);
+
+void func_080AA81C(struct Obj *obj)
+{
+    struct Parent *parent = obj->parent;
+    s32 x;
+
+    if (!(obj->flags & 0x8000))
+        obj->x -= 0x800;
+    else
+        obj->x += 0x800;
+    if (!(obj->count & 1))
+    {
+        x = obj->x / 256;
+        parent->child[obj->count / 2 + 5] = func_080A3770(parent, 1, 0, !(obj->flags & 0x8000) ? x + 16 : x - 16, obj->y / 256, 0x500, 0x80, 0x80, 2);
+        if (!(obj->flags & 0x8000) ? obj->x < 0 : obj->x > 0xEFFF)
+        {
+            obj->flags |= 0x20000;
+            obj->callback = 0;
+            return;
+        }
+    }
+    obj->count++;
+}
