@@ -1,0 +1,74 @@
+.syntax unified
+.cpu arm7tdmi
+.text
+.balign 2
+.global data_080C6D78
+.type data_080C6D78, %object
+.thumb
+data_080C6D78:
+    .word 0xF7FF46F4
+    .word 0x774BFFB7
+    .word 0x00004760
+    .word 0xF7FF46F4
+    .word 0x005BFFB1
+    .word 0x8BC28383
+    .word 0x0A1B4353
+    .word 0x47608403
+    .word 0xF7FF46F4
+    .word 0x728BFFA7
+    .word 0x220C780B
+    .word 0x700B4313
+    .word 0x00004760
+    .word 0x6C0A46F4
+    .word 0x32017813
+    .word 0x005A640A
+    .word 0x009218D2
+    .word 0x18D26B03
+    .word 0xF7FF6813
+    .word 0x624BFF86
+    .word 0xF7FF6853
+    .word 0x628BFF82
+    .word 0xF7FF6893
+    .word 0x62CBFF7E
+    .word 0x00004760
+    .word 0xF7FF46F4
+    .word 0x748BFF85
+    .word 0x2203780B
+    .word 0x700B4313
+    .word 0x00004760
+    .word 0xF7FF46F4
+    .word 0x3B40FF7B
+    .word 0x780B750B
+    .word 0x43132203
+    .word 0x4760700B
+    .word 0xF7FF46F4
+    .word 0x3B40FF71
+    .word 0x780B738B
+    .word 0x4313220C
+    .word 0x4760700B
+    .word 0xF7FF46F4
+    .word 0x73CBFF67
+    .word 0x220C780B
+    .word 0x700B4313
+    .word 0x00004760
+    .word 0xF7FF46F4
+    .word 0x76CBFF5D
+    .word 0x00004760
+    .word 0xF7FF46F4
+    .word 0x7E08FF57
+    .word 0xD0044298
+    .word 0x780B760B
+    .word 0x4313220F
+    .word 0x4760700B
+    .word 0xF7FF46F4
+    .word 0x3B40FF4B
+    .word 0x780B730B
+    .word 0x4313220C
+    .word 0x4760700B
+    .word 0x6C0A46F4
+    .word 0x32017813
+    .word 0x18C04802
+    .word 0xFF3DF7FF
+    .word 0x47607003
+    .word 0x04000060
+.size data_080C6D78, .-data_080C6D78

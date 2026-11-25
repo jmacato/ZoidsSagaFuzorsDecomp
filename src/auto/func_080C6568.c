@@ -1,0 +1,22 @@
+#include "m2c.h"
+
+extern struct { s32 f_0; s32 f_4; s32 f_8; s32 f_C; s32 f_10; } D_02030B58;
+
+s32 func_080771BC(M2C_UNK, M2C_UNK, s32, s32, s32, s32, s32, s32, s32);
+M2C_UNK func_080771F4(s32);
+M2C_UNK func_0807C290(M2C_UNK);
+
+void func_080C6568(void)
+{
+    D_02030B58.f_0 = func_080771BC(0x080F359C, 0x080F35A8, 0, 0x70, 0x18, 0x2A9, 0xE, 8, 0);
+    D_02030B58.f_4 = func_080771BC(0x080F35C4, 0x080F35D0, 0, 0x70, 0x28, 0x2AD, 0xE, 8, 0);
+    D_02030B58.f_8 = func_080771BC(0x080F35EC, 0x080F35F8, 0, 0x70, 0x38, 0x2B1, 0xE, 8, 0);
+    D_02030B58.f_C = func_080771BC(0x080F3614, 0x080F3620, 0, 0x70, 0x48, 0x2B5, 0xE, 8, 0);
+    D_02030B58.f_10 = func_080771BC(0x080F363C, 0x080F3648, 0, 0x70, 0x60, 0x2B9, 0xE, 8, 0);
+    func_0807C290(0x08028473);
+    func_080771F4(D_02030B58.f_0);
+    func_080771F4(D_02030B58.f_4);
+    func_080771F4(D_02030B58.f_8);
+    func_080771F4(D_02030B58.f_C);
+    func_080771F4(D_02030B58.f_10);
+}
